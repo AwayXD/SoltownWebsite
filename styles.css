@@ -80,13 +80,13 @@ nav ul li a:hover {
 .hero h2 {
     font-size: 3rem;
     animation: fadeIn 2s;
-    color: white; /* Ensure text is black */
+    color: white; /* Ensure text is white */
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-top: 10px;
-    color: black; /* Ensure paragraph text is black */
+    color: white; /* Ensure paragraph text is white */
 }
 
 @keyframes fadeIn {
