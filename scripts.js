@@ -1,12 +1,11 @@
-document.addEventListener('DOMContentLoaded', function () {
+// Fade-in effect for all elements with class '.fade-in'
+document.addEventListener("DOMContentLoaded", function () {
     const elements = document.querySelectorAll('.fade-in');
     const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
+        threshold: 0.3
     };
-
-    const observer = new IntersectionObserver((entries, observer) => {
+    
+    const fadeObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
@@ -14,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }, options);
-
-    elements.forEach(el => {
-        observer.observe(el);
+    
+    elements.forEach(element => {
+        fadeObserver.observe(element);
     });
 });
