@@ -1,3 +1,4 @@
+/* Add more animations and hover effects */
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +20,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
@@ -50,6 +52,38 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
+.fade-link {
+    transition: color 0.3s ease;
+}
+
+.fade-link:hover {
+    color: #ffcc00;
+}
+
+.hero {
+    background: url('images/hero.jpg') no-repeat center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h2 {
+    font-size: 3rem;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .section {
     padding: 2rem 1rem;
     text-align: center;
@@ -63,6 +97,11 @@ nav ul li a:hover {
     transform: translateY(0);
 }
 
+.image-hover:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 footer {
     background: #3a3a8c;
     color: #fff;
@@ -73,40 +112,4 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s, transform 0.6s;
-}
-
-.fade-in.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.fade-link {
-    transition: color 0.3s ease;
-}
-
-.fade-link:hover {
-    color: #ffcc00;
-}
-
-.media-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.media-gallery img {
-    width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.media-gallery img:hover {
-    transform: scale(1.05);
 }
