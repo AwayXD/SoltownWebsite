@@ -68,7 +68,6 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     color: #fff;  /* white I think? */
-    text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.7); /* Gray text shadow */
 }
 
 .hero-content {
@@ -79,7 +78,7 @@ nav ul li a:hover {
 .hero h2 {
     font-size: 3rem;
     animation: fadeIn 2s;
-    color: black; /* Ensure text is black */
+    color: white; /* Ensure text is black */
 }
 
 .hero p {
