@@ -202,8 +202,9 @@ footer p {
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
+/* Hover zoom effect */
 .image-hover:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.1); /* Smooth zoom effect */
     opacity: 1;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
