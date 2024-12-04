@@ -68,7 +68,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     color: #000; /* Ensures text inside hero section is black */
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Light text shadow for contrast */
+    text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.7); /* Gray text shadow */
 }
 
 .hero-content {
