@@ -5,183 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sol Town Acappella</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            background: #f4f4f4;
-            color: #333;
-            scroll-behavior: smooth;
-        }
-
-        header {
-            background: #3a3a8c;
-            color: #fff;
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header h1 {
-            font-size: 1.5rem;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        nav ul li {
-            margin: 0 1rem;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #ffcc00;
-        }
-
-        .hero {
-            background: url('https://via.placeholder.com/1500x500') no-repeat center/cover;
-            height: 60vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-
-        .hero h2 {
-            font-size: 2.5rem;
-            animation: fadeIn 2s;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        .section {
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-
-        .section h3 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #3a3a8c;
-        }
-
-        .section p {
-            max-width: 800px;
-            margin: 0 auto;
-            color: #555;
-        }
-
-        .card-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
-        }
-
-        .card {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-            overflow: hidden;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card h4 {
-            font-size: 1.5rem;
-            margin: 1rem;
-            color: #3a3a8c;
-        }
-
-        .card p {
-            margin: 0 1rem 1rem;
-            color: #555;
-        }
-
-        footer {
-            background: #3a3a8c;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s, transform 0.5s;
-        }
-
-        .fade-in.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .media-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            padding: 1rem;
-        }
-
-        .media-gallery img {
-            width: 100%;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-
-        .media-gallery img:hover {
-            transform: scale(1.05);
-        }
-
-        .media-header {
-            text-align: center;
-            margin: 2rem 0;
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -189,54 +13,23 @@
             <h1>Sol Town Acappella</h1>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#midtown">MidTown A Cappella</a></li>
-                    <li><a href="#media">Media</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#auditions">Auditions</a></li>
-                    <li><a href="#members">Members</a></li>
+                    <li><a href="home.html" class="fade-link">Home</a></li>
+                    <li><a href="midtown.html" class="fade-link">MidTown A Cappella</a></li>
+                    <li><a href="media.html" class="fade-link">Media</a></li>
+                    <li><a href="events.html" class="fade-link">Events</a></li>
+                    <li><a href="auditions.html" class="fade-link">Auditions</a></li>
+                    <li><a href="members.html" class="fade-link">Members</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <section id="home" class="section">
+    <section id="home" class="section fade-in">
         <h3>Welcome to SolTown Acappella</h3>
         <p>SolTown is the official Germantown High School A Cappella Team, a competitive ensemble based in Germantown, Wisconsin.</p>
-        <p><b>A little nerding out about our name:</b> "Germantown" (GTown) is a small village north of Milwaukee. In the fixed-do system of sightreading, "G" is called "Sol"—which ties back to our motto: "Always Dominant."</p>
     </section>
-
-    <section id="midtown" class="section">
-        <h3>MidTown A Cappella</h3>
-        <p>MidTown A Cappella is a dedicated group of Kennedy Middle School 6th–8th graders who perform popular songs with vocals and movement. Rehearsals are Thursdays in the KMS Choir Room from 4:45–6:00 PM.</p>
-    </section>
-
-    <section id="media" class="section">
-        <h3>Media</h3>
-        <div class="media-gallery">
-            <img src="1.jpg" alt="Media 1">
-            <img src="2.jpg" alt="Media 2">
-            <img src="3.jpg" alt="Media 3">
-        </div>
-    </section>
-
-    <section id="events" class="section">
-        <h3>Events</h3>
-        <p>Upcoming: Germantown Sings! on April 9th, 6 PM. Stay tuned for more details.</p>
-    </section>
-
-    <section id="auditions" class="section">
-        <h3>Auditions</h3>
-        <p>Interested in joining SolTown for the 2024–2025 season? Auditions are April 11th from 2:30–5:30 PM in the GHS Choir Room. Be ready to perform your best!</p>
-    </section>
-
-    <section id="members" class="section">
-        <h3>Members</h3>
-        <p>Access the members-only section to stay up to date with announcements and resources.</p>
-    </section>
-
     <footer>
         <p>&copy; 2024 Sol Town Acappella. All rights reserved.</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
