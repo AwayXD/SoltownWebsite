@@ -185,24 +185,24 @@ footer p {
     flex-wrap: wrap;
 }
 
+/* Image hover and fade-in effect */
 .image-hover {
     width: 100%;
-    max-width: 300px;
+    max-width: 600px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Start off hidden */
+    transform: scale(1); /* Initial scale */
+    transition: opacity 0.6s ease, transform 0.3s ease;
 }
 
-/* Smooth zoom effect */
 .image-hover:hover {
-    transform: scale(1.05); /* Subtle zoom */
-    transition: transform 0.3s ease; /* Smooth zoom effect */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    opacity: 1; /* Ensure opacity stays at 1 */
 }
 
-/* Fade-in for images on load */
 .image-hover.loaded {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /* Fade in when in view */
+    transform: scale(1); /* Keep normal size */
 }
+
