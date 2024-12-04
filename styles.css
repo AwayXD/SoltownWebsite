@@ -61,8 +61,8 @@ nav ul li a:hover {
 }
 
 .hero {
-    background: url('images/hero-background.jpg') no-repeat center/cover;
-    height: 60vh;
+    background: url('images/soltown-hero.jpg') no-repeat center/cover; /* Added background image */
+    height: 80vh; /* Adjusted height to make it more prominent */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,9 +70,21 @@ nav ul li a:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+.hero-content {
+    text-align: center;
+    max-width: 80%;
+    color: black; /* Ensures the text is black */
+}
+
 .hero h2 {
     font-size: 3rem;
     animation: fadeIn 2s;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: black; /* Ensures the paragraph text is black as well */
 }
 
 @keyframes fadeIn {
@@ -95,11 +107,6 @@ nav ul li a:hover {
 .section.show {
     opacity: 1;
     transform: translateY(0);
-}
-
-.image-hover:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
 }
 
 footer {
