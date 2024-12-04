@@ -1,11 +1,11 @@
-// Fade-in effect for all elements with class '.fade-in'
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
     const elements = document.querySelectorAll('.fade-in');
     const options = {
-        threshold: 0.3
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
     };
-    
-    const fadeObserver = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
@@ -13,16 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }, options);
-    
-    elements.forEach(element => {
-        fadeObserver.observe(element);
-    });
-
-    // Add fade-in effect to images when they are fully loaded
-    const images = document.querySelectorAll('.image-hover');
-    images.forEach(image => {
-        image.onload = function () {
-            image.classList.add('loaded');
-        };
+    elements.forEach(el => {
+        observer.observe(el);
     });
 });
