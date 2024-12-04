@@ -17,4 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
     elements.forEach(element => {
         fadeObserver.observe(element);
     });
+
+    // Add fade-in effect to images when they are fully loaded
+    const images = document.querySelectorAll('.image-hover');
+    images.forEach(image => {
+        image.onload = function () {
+            image.classList.add('loaded');
+        };
+    });
 });
