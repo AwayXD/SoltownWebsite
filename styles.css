@@ -61,14 +61,14 @@ nav ul li a:hover {
 }
 
 .hero {
-    background: url('images/soltown-hero.jpg') no-repeat center/cover; /* Background image */
-    background-size: cover; /* Ensures the image covers the section */
-    height: 100vh; /* Full viewport height */
+    background: url('images/soltown-hero.jpg') no-repeat center/cover;
+    background-size: cover;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000;  /* white I think? */
-    text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.7); /* Gray text shadow */
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.7);
 }
 
 .hero-content {
@@ -79,13 +79,13 @@ nav ul li a:hover {
 .hero h2 {
     font-size: 3rem;
     animation: fadeIn 2s;
-    color: white; /* Ensure text is white */
+    color: white;
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-top: 10px;
-    color: white; /* Ensure paragraph text is white */
+    color: white;
 }
 
 @keyframes fadeIn {
@@ -160,4 +160,20 @@ footer p {
     margin-top: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
+
+.team-image img:hover {
+    transform: translateY(-10px);
+    opacity: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Fade-in effect for images on load */
+.team-image img.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
