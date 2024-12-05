@@ -8,8 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     const fadeObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
+        entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
+                // Add staggered animation delay
+                entry.target.style.transitionDelay = `${index * 0.2}s`;
                 entry.target.classList.add('show');
                 observer.unobserve(entry.target);
             }
