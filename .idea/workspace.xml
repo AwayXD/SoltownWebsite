@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1613098a-388b-4904-bb57-bf6235101580" name="Changes" comment="phone v2" />
+    <list default="true" id="1613098a-388b-4904-bb57-bf6235101580" name="Changes" comment="phone v3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738771505176</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="phone v3">
+      <option name="closed" value="true" />
+      <created>1738772189635</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738772189635</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +194,7 @@
     <MESSAGE value="maybe" />
     <MESSAGE value="phone v1" />
     <MESSAGE value="phone v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="phone v2" />
+    <MESSAGE value="phone v3" />
+    <option name="LAST_COMMIT_MESSAGE" value="phone v3" />
   </component>
 </project>
