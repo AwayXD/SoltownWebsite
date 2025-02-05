@@ -180,6 +180,8 @@ footer p {
     .image-hover {
         width: 100%;
         max-width: 800px;
+        max-height: 200px;
+
     }
 }
 
