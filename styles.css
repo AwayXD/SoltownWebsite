@@ -104,7 +104,7 @@ nav ul li a:hover {
 
 .image-hover {
     max-width: 700px;
-    max-height: 300px;
+    max-height: 100000px;
     width: auto;
     height: auto;
     border-radius: 8px;

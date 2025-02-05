@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1613098a-388b-4904-bb57-bf6235101580" name="Changes" comment="phone v11">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
-    </list>
+    <list default="true" id="1613098a-388b-4904-bb57-bf6235101580" name="Changes" comment="phone v14" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -240,7 +237,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738774484349</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="phone v13">
+      <option name="closed" value="true" />
+      <created>1738774750361</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1738774750361</updated>
+    </task>
+    <task id="LOCAL-00020" summary="phone v14">
+      <option name="closed" value="true" />
+      <created>1738774895211</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1738774895211</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,6 +296,8 @@
     <MESSAGE value="phone v9" />
     <MESSAGE value="phone v10" />
     <MESSAGE value="phone v11" />
-    <option name="LAST_COMMIT_MESSAGE" value="phone v11" />
+    <MESSAGE value="phone v13" />
+    <MESSAGE value="phone v14" />
+    <option name="LAST_COMMIT_MESSAGE" value="phone v14" />
   </component>
 </project>
