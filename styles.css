@@ -138,6 +138,8 @@ footer p {
 }
 
 /* === Mobile Styles (Only Apply If Screen is Small) === */
+/* Needs 3 Bars */
+
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
@@ -190,3 +192,4 @@ footer p {
         opacity: 1;
     }
 }
+
