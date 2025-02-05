@@ -41,3 +41,4 @@ document.addEventListener('DOMContentLoaded', function () {
         imageObserver.observe(image);
     });
 });
+// to commit lol
