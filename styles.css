@@ -12,6 +12,7 @@ body {
     scroll-behavior: smooth;
 }
 
+/* === PC/Desktop Styles (Default) === */
 header {
     background: #3a3a8c;
     color: #fff;
@@ -51,7 +52,7 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
-/* Hero Section */
+/* Hero Section (PC Default) */
 .hero {
     background: url('images/soltown-hero.jpg') no-repeat center/cover;
     height: 100vh;
@@ -60,22 +61,21 @@ nav ul li a:hover {
     align-items: center;
     text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.7);
     text-align: center;
-    padding: 1rem;
 }
 
 .hero-content {
     text-align: center;
-    max-width: 90%;
+    max-width: 80%;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     animation: fadeIn 2s;
     color: white;
 }
 
 .hero p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-top: 10px;
     color: white;
 }
@@ -94,7 +94,7 @@ nav ul li a:hover {
     transform: translateY(0);
 }
 
-/* Media Gallery */
+/* Gallery (PC Default) */
 .gallery {
     display: flex;
     justify-content: center;
@@ -103,7 +103,9 @@ nav ul li a:hover {
 }
 
 .image-hover {
-    max-width: 100%;
+    max-width: 700px;
+    max-height: 300px;
+    width: auto;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -135,8 +137,10 @@ footer p {
     margin: 0;
 }
 
-/* Responsive Design */
-@media (max-width: 460px) {
+/* === Mobile Styles (Only Apply If Screen is Small) === */
+/* Needs 3 Bars */
+
+@media (max-width: 768px) {
     header .container {
         flex-direction: column;
         text-align: center;
@@ -173,9 +177,9 @@ footer p {
         align-items: center;
     }
 
-    .gallery {
-        width: 90%;
-        max-width: 500px;
+    .image-hover {
+        width: 100%;
+        max-width: 800px;
     }
 }
 
