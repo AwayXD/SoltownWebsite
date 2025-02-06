@@ -188,6 +188,12 @@ footer p {
     }
 }
 
+img {
+    height: auto;
+    width: 100%;
+    max-width: max-content;
+  }
+
 /* Smooth Fade-in Animation */
 @keyframes fadeIn {
     from {
