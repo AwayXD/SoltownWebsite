@@ -7,20 +7,68 @@
     <link rel="icon" type="image/x-icon" href="https://i.ibb.co/zTw7hJYJ/Sol-Town-Logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            padding: 10px 20px;
+            color: white;
+        }
+        .menu {
+            display: none;
+            flex-direction: column;
+            background: #444;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+        }
+        .menu a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .menu a:hover {
+            background: #555;
+        }
+        .hamburger {
+            cursor: pointer;
+            font-size: 24px;
+        }
+        @media (min-width: 600px) {
+            .menu {
+                display: flex;
+                flex-direction: row;
+                position: static;
+                background: none;
+                width: auto;
+            }
+            .hamburger {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
 <header>
-    <div class="container">
-        <h1 class="fade-in">SolTown Acappella</h1>
-        <nav>
-            <ul>
-                <li><a href="home.html" class="fade-link">Home</a></li>
-                <li><a href="media.html" class="fade-link">Media</a></li>
-                <li><a href="events.html" class="fade-link">Events</a></li>
-                <li><a href="auditions.html" class="fade-link">Auditions</a></li>
-                <li><a href="members.html" class="fade-link">Members</a></li>
-            </ul>
-        </nav>
+    <div class="navbar">
+        <div class="logo">SolTown Acappella</div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu" id="mobileMenu">
+            <a href="home.html">Home</a>
+            <a href="media.html">Media</a>
+            <a href="events.html">Events</a>
+            <a href="auditions.html">Auditions</a>
+            <a href="members.html">Members</a>
+        </div>
     </div>
 </header>
 
