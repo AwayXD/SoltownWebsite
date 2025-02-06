@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
     
     function toggleMenu() {
         var menu = document.getElementById("mobileMenu");
-        menu.classList.toggle("open");
+        menu.classList.toggle("active");
     }
-
+    
     const fadeObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
