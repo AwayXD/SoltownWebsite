@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -15,25 +20,37 @@
             background: #333;
             padding: 10px 20px;
             color: white;
+            position: relative;
         }
         .menu {
-            display: none;
-            flex-direction: column;
             position: absolute;
             top: 50px;
             left: 0;
             width: 100%;
+            background: #444;
+            flex-direction: column;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            z-index: 1000;
         }
         .menu a {
             color: white;
             padding: 10px;
             text-decoration: none;
             text-align: center;
+            display: block;
         }
-        
+        .menu a:hover {
+            background: #555;
+        }
         .hamburger {
             cursor: pointer;
             font-size: 24px;
+        }
+        .menu.open {
+            opacity: 1;
+            visibility: visible;
         }
         @media (min-width: 600px) {
             .menu {
@@ -42,6 +59,8 @@
                 position: static;
                 background: none;
                 width: auto;
+                opacity: 1;
+                visibility: visible;
             }
             .hamburger {
                 display: none;
@@ -80,94 +99,17 @@
             <p><strong>4/11</strong> 2:40-5:30 - 2024-2025 SolTown Auditions</p>
         </div>
     </div>
-    <div class="upcoming-list">
-        <p><strong>5/4</strong> TBA - State Solo/Ensemble</p>
-        <p><strong>5/23</strong> 7:00pm - GHS Choir Concert</p>
-        <p><strong>6/2</strong> 11:00 - GHS Graduation</p>
-        <p><strong>6/24-6/28</strong> 9:00am-1:00pm - Camp ACAPPELLA</p>
-        <p><strong>9/5</strong> 6:30 - 1st Thursday SolTown Rehearsal</p>
-        <p><strong>10/23</strong> 7:00pm - Fall Choir Concert</p>
-        <p><strong>11/9</strong> 4:00pm - Oak Creek A Cappella Party! (OCAP)</p>
-        <p><strong>12/15</strong> 1:00pm - SolTown Sunday</p>
-        <p><strong>12/19</strong> 7:00pm - Winter Choir Concert</p>
-        <p><strong>1/5</strong> 1:00pm - SolTown Sunday</p>
-        <p><strong>1/12</strong> 1:00pm - SolTown Sunday</p>
-        <p><strong>1/19</strong> 1:00pm - SolTown Sunday</p>
-        <p><strong>1/26</strong> 1:00pm - SolTown Sunday</p>
-        <p><strong>1/31</strong> 4:00pm - AC in the OC</p>
-        <p><strong>2/2</strong> 1:00pm - SolTown Sunday</p>
-        <p><strong>2/8</strong> 11:00am - Potential Date for ICHSA</p>
-        <p><strong>2/9</strong> 1:00pm - SolTown Sunday (if needed)</p>
-        <p><strong>2/15</strong> 11:00am - Potential Date for ICHSA</p>
-        <p><strong>2/16</strong> 1:00pm - SolTown Sunday (If needed)</p>
-        <p><strong>2/22</strong> 11:00am - Potential date for ICHSA</p>
-        <p><strong>3/22</strong> 11:00am - ICHSA Semi-finals (When we make it!!!)</p>
-        <p><strong>4/4-5</strong> TBA - Acapocalypse Port Washington</p>
-    </div>
-</section>
-
-<section class="section fade-in" id="past-events">
-    <h3>
-        Past Events
-        <br>
-        <br>
-    </h3>
-    <div class="past-event">
-        <img src="images/events/1.jpeg" alt="2022 ICHSA Great Lakes Semifinal" class="image-hover">
-        <p>
-            <br>
-            <strong>2022 ICHSA Great Lakes Semifinal</strong><br>SolTown competed at the 2022 ICHSA Semi-Finals at the Pabst Theater in Milwaukee, WI. on March 12th.
-            <br>
-            <br>
-        </p>
-    </div>
-    <div class="past-event">
-        <img src="images/events/2.jpeg" alt="2022 ICHSA Quarterfinal" class="image-hover">
-        <p>
-            <br>
-            <br>
-            <strong>2022 ICHSA Quarterfinal</strong><br>SolTown competed at the 2022 ICHSA Quarterfinals at the Oak Creek Performing Arts and Education Center.
-            <br>
-            <br>
-        </p>
-    </div>
-    <div class="past-event">
-        <img src="images/events/3.jpeg" alt="GSD's Got Talent" class="image-hover">
-        <p>
-            <br>
-            <br>
-            <strong>GSD's Got Talent</strong><br>SolTown performed at the GHS High School's Talent Show on March 9th.
-            <br>
-            <br>
-        </p>
-    </div>
-    <div class="past-event">
-        <img src="images/events/4.jpeg" alt="Cabaret Night" class="image-hover">
-        <p>
-            <br>
-            <strong>Cabaret Night</strong>
-            <br>
-            SolTown performed at the annual Germantown High School Cabaret Night Fundraiser.
-            <br>
-        </p>
-    </div>
 </section>
 
 <footer>
-    <p>&copy; © 2024 SolTown Acappella.</p>
+    <p>&copy; 2024 SolTown Acappella.</p>
 </footer>
 
-<script src="scripts.js">
-        function toggleMenu() {
+<script>
+    function toggleMenu() {
         var menu = document.getElementById("mobileMenu");
-        if (menu.style.display === "flex") {
-            menu.style.display = "none";
-        } else {
-            menu.style.display = "flex";
-        }
+        menu.classList.toggle("open");
     }
 </script>
 </body>
 </html>
-<!-- to commit lol -->
-
