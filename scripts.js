@@ -6,11 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         rootMargin: '0px',
         threshold: 0.1
     };
-    
-    function toggleMenu() {
-        var menu = document.getElementById("mobileMenu");
-        menu.classList.toggle("active");
-    }
+  
     
     const fadeObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry, index) => {
