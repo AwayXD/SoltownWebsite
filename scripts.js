@@ -6,6 +6,15 @@ document.addEventListener('DOMContentLoaded', function () {
         rootMargin: '0px',
         threshold: 0.1
     };
+    
+    function toggleMenu() {
+        var menu = document.getElementById("mobileMenu");
+        if (menu.style.display === "flex") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "flex";
+        }
+    }
 
     const fadeObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry, index) => {
