@@ -171,12 +171,6 @@ img {
     width: 100%;
     border-radius: 10px;
     max-width: max-content;
-    transition:transform 0.15s ease;
-  }
-
-  img:hover {
-    -webkit-transform:scale(1.3); /* or some other value */
-    transform:scale(1.3);
   }
 
 /* Smooth Fade-in Animation */
