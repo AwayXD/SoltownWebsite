@@ -209,11 +209,17 @@ img {
     align-items: center;
     text-align: center;
     align-self: center;
+    height: auto;
+    width: 100%;
     border-radius: 10px;
+    max-width: max-content;
 }
 .spotify-embeds {
     align-items: center;
     text-align: center;
     align-self: center;
+    height: auto;
+    width: 100%;
     border-radius: 10px;
+    max-width: max-content;
 }
