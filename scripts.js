@@ -23,6 +23,19 @@ document.addEventListener('DOMContentLoaded', function () {
         fadeObserver.observe(el);
     });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.querySelector("nav ul"); // Selects the menu list
+
+    hamburger.addEventListener("click", function () {
+        nav.classList.toggle("show"); // Toggles the show class
+    });
+});
+
+
+
+
+
     // Intersection Observer for lazy-loading images with fade-in effect
     const images = document.querySelectorAll('.image-hover');
     const imageOptions = {

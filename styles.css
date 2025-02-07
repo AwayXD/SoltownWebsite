@@ -202,3 +202,51 @@ footer p {
 img {
     border-radius = "10px";
 }
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Style for the hamburger button */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 2000;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        text-align: center;
+        background: #3a3a8c;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show when toggled */
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+}
