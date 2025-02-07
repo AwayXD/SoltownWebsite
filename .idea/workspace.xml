@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1613098a-388b-4904-bb57-bf6235101580" name="Changes" comment="phone v14" />
+    <list default="true" id="1613098a-388b-4904-bb57-bf6235101580" name="Changes" comment="e;ri">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media.html" beforeDir="false" afterPath="$PROJECT_DIR$/media.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,6 +78,7 @@
       <recent name="C:\Users\Speak\Desktop\Coding Projects\SoltownWebsite\images\members" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Speak\Desktop\Coding Projects\SoltownWebsite\images" />
       <recent name="C:\Users\Speak\Desktop\Coding Projects\SoltownWebsite\images\events" />
       <recent name="C:\Users\Speak\Desktop\Coding Projects\SoltownWebsite\images\members" />
       <recent name="C:\Users\Speak\Desktop\Coding Projects\SoltownWebsite\images\audition" />
@@ -253,7 +260,55 @@
       <option name="project" value="LOCAL" />
       <updated>1738774895211</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="phone v15">
+      <option name="closed" value="true" />
+      <created>1738775106791</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1738775106791</updated>
+    </task>
+    <task id="LOCAL-00022" summary="phone v16">
+      <option name="closed" value="true" />
+      <created>1738775398272</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1738775398273</updated>
+    </task>
+    <task id="LOCAL-00023" summary="image resscaling">
+      <option name="closed" value="true" />
+      <created>1738849393755</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1738849393755</updated>
+    </task>
+    <task id="LOCAL-00024" summary="e;ri">
+      <option name="closed" value="true" />
+      <created>1738849747804</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1738849747804</updated>
+    </task>
+    <task id="LOCAL-00025" summary="e;ri">
+      <option name="closed" value="true" />
+      <created>1738935836962</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1738935836962</updated>
+    </task>
+    <task id="LOCAL-00026" summary="e;ri">
+      <option name="closed" value="true" />
+      <created>1738935890034</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1738935890034</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,6 +353,10 @@
     <MESSAGE value="phone v11" />
     <MESSAGE value="phone v13" />
     <MESSAGE value="phone v14" />
-    <option name="LAST_COMMIT_MESSAGE" value="phone v14" />
+    <MESSAGE value="phone v15" />
+    <MESSAGE value="phone v16" />
+    <MESSAGE value="image resscaling" />
+    <MESSAGE value="e;ri" />
+    <option name="LAST_COMMIT_MESSAGE" value="e;ri" />
   </component>
 </project>

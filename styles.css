@@ -161,8 +161,9 @@ footer p {
 .image-hover.loaded {
     opacity: 1;
     transform: scale(1);
+
 }
-x``
+
 
 .youtube-embeds {
     align-items: center;
@@ -181,4 +182,7 @@ x``
     width: 100%;
     border-radius: 10px;
     max-width: max-content;
+}
+img {
+    border-radius = "10px";
 }
