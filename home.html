@@ -1,18 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    
-    <style>
-         img {
-           transition:transform 0.4s ease;
-         }
-       
-         img:hover {
-           -webkit-transform:scale(1.03); /* or some other value */
-           transform:scale(1.03);
-         }
-         
-    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,13 +7,12 @@
     <link rel="icon" type="image/x-icon" href="https://i.imgur.com/APRujeU.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
 </head>
 <body>
 <header>
     <div class="container">
         <h1 class="fade-in">SolTown Acappella</h1>
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <button class="hamburger">☰</button>
         <nav>
             <ul class="nav-links">
                 <li><a href="home.html" class="fade-link">Home</a></li>
@@ -38,6 +24,7 @@
         </nav>
     </div>
 </header>
+
 <section class="hero home-hero">
     <div class="section fade-in">
         <h2>Your Musical Journey Begins Here</h2>
@@ -47,47 +34,27 @@
 
 <section class="section fade-in" id="home">
     <h3 class="fade-in">Our Team</h3>
-    <p class="fade-in">We are a dynamic, passionate, and dedicated group of high school students with a love for singing and performing.
-        <br>
-    </p>
+    <p class="fade-in">We are a dynamic, passionate, and dedicated group of high school students with a love for singing and performing.</p>
 
     <div class="team-info fade-in">
-        <h4 class="team-title">
-            <br>
-            The Official Germantown High School A Cappella Team
-        </h4>
+        <h4 class="team-title">The Official Germantown High School A Cappella Team</h4>
         <p class="team-description">Soltown is a competitive A Cappella ensemble from Germantown, Wisconsin.</p>
-        <h5 class="team-name-info">
-            <br>
-            A little nerding out about our name:
-        </h5>
+        <h5 class="team-name-info">A little nerding out about our name:</h5>
         <p class="team-name-description">SolTown: Noun.</p>
-        <p class="team-explanation">Germantown, Wisconsin, is a small village north of Milwaukee, Wisconsin, commonly referred to as "G-Town".</p>
-        <p class="team-solfeggio">When using the fixed-do system of sightreading, "G" is given the solfeggio syllable "Sol" (a needle pulling thread).</p>
+        <p class="team-explanation">Germantown, Wisconsin, is a small village north of Milwaukee, commonly referred to as "G-Town".</p>
+        <p class="team-solfeggio">When using the fixed-do system of sightreading, "G" is given the solfeggio syllable "Sol".</p>
         <p class="team-result">The result is that G-Town = SolTown.</p>
-        <p class="team-motto">
-            <br>
-            <strong>Our Motto:</strong> "Always Dominant" is not a boastful statement, but rather a comment on the fact that in music theory, "Sol" is the 5th scale degree, which is given the name "Dominant" based on the hierarchy of pitches in the Ionic Mode.
-        </p>
+        <p class="team-motto"><strong>Our Motto:</strong> "Always Dominant" refers to the 5th scale degree, named "Dominant" in music theory.</p>
 
-        <h5 class="team-achievements">
-            <br>
-            What we've done
-        </h5>
+        <h5 class="team-achievements">What we've done</h5>
         <p class="team-achievement-description">
-            This year, we were so proud to take home the quarterfinal award for Best Choreography. Congratulations to Choreographer, Ben Lamb, and Dance Captains, Leah Culli and Emily Nicol.
-            <br><br>
+            This year, we were proud to win the quarterfinal award for Best Choreography. Congratulations to our Choreographer and Dance Captains!
         </p>
-
 
         <div class="semifinals">
             <img src="images/semi-finals.jpg" alt="Soltown after the announcement that they would be moving on to Semi-Finals" style="border-radius: 10px; display: block;">
         </div>
-        <h6>
-            <br>
-            <p class="team-achievements">Soltown after the announcement that they would be moving on to Semi-Finals</p>
-        </h6>
-
+        <h6><p class="team-achievements">Soltown after the Semi-Finals announcement</p></h6>
     </div>
 </section>
 
@@ -95,6 +62,7 @@
     <p>&copy; 2024 SolTown Acappella. All rights reserved.</p>
 </footer>
 
+<!-- Ensure scripts.js loads after the DOM -->
 <script src="scripts.js"></script>
 </body>
 </html>
