@@ -77,6 +77,16 @@ nav ul li a:hover {
     align-items: center;
     text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.7);
     }
+    }
+    .semifinals-small {
+        background: url('') no-repeat center/cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.7);
+
+        }
 
 .hero-content {
     text-align: center;
