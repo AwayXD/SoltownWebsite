@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    // Intersection Observer for lazy-loading images with fade-in effect
     const images = document.querySelectorAll('.image-hover');
     const imageOptions = {
         threshold: 0.3
@@ -88,4 +87,3 @@ document.addEventListener("DOMContentLoaded", function () {
         imageObserver.observe(image);
     });
 });
-// to commit lol
